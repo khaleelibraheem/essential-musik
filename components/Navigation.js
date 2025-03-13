@@ -34,7 +34,7 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
         scrolled ? 'bg-black bg-opacity-90 backdrop-blur-lg' : 'bg-black md:bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-20">
+      <div className="max-w-[95rem] mx-auto px-6 lg:px-20">
         <div className="flex justify-between items-center h-20">
           <motion.div 
             className="text-2xl sm:text-3xl font-bold cursor-pointer tracking-tight"
@@ -88,7 +88,7 @@ const Navigation = ({ currentPage, setCurrentPage }) => {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-black bg-opacity-95 backdrop-blur-xl"
           >
-            <div className="px-6 py-4 space-y-2">
+            <div className="px-6 lg:px-20 py-4 space-y-2">
               {navLinks.map((link) => (
                 <motion.button
                   key={link.id}

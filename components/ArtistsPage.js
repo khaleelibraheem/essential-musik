@@ -257,18 +257,6 @@ const ArtistsPage = () => {
             variants={fadeInUp}
           >
             <div className="text-center mb-16 sm:mb-20 pt-20 md:pt-10">
-              <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
-                <Badge 
-                  variant="outline" 
-                  className="mb-6 px-4 py-1.5 border-zinc-700 text-white/90"
-                >
-                  <Music size={14} className="mr-2" /> Essential Musik
-                </Badge>
-              </motion.div>
               <motion.h1 
                 className="text-4xl sm:text-6xl font-bold mb-6 sm:mb-8 text-white tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/80"
                 initial={{ opacity: 0, y: 20 }}

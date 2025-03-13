@@ -90,25 +90,9 @@ const ShopPage = () => {
 
   return (
     <main className="min-h-screen bg-black">
-      {/* Navbar with Cart */}
-      {/* <div className="fixed top-0 left-0 right-0 bg-black z-10 py-4 px-6 lg:px-20 border-b border-white/10">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h2 className="text-xl font-bold text-white">ARTIST SHOP</h2>
-          <div className="flex items-center gap-6">
-            <button className="relative p-2">
-              <ShoppingCart size={24} />
-              {cartCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-white text-black text-xs w-5 h-5 rounded-full flex items-center justify-center">
-                  {cartCount}
-                </span>
-              )}
-            </button>
-          </div>
-        </div>
-      </div> */}
-
-      <section className="py-24 px-6 lg:px-20">
-        <div className="max-w-7xl mx-auto">
+      {/* Updated padding to match navbar */}
+      <section className="py-24">
+        <div className="max-w-[95rem] mx-auto px-6 lg:px-20">
           {/* Hero Section */}
           <div className="text-center mb-16 pt-[80px] md:pt-[30px]">
             <motion.h1
@@ -227,7 +211,6 @@ const ShopPage = () => {
                       alt={product.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    {/* Removed hover add to cart overlay */}
                   </div>
                   
                   {/* Product Details */}

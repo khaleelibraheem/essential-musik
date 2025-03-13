@@ -42,12 +42,12 @@ const AboutPage = () => {
   return (
     <main className="min-h-screen bg-black">
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center px-4 sm:px-6">
+      <section className="relative min-h-[80vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-radial from-purple-500/10 via-black to-black" />
         </div>
         
-        <div className="relative max-w-7xl mx-auto text-center pt-[80px] md:pt-[0px]">
+        <div className="relative w-full max-w-[95rem] mx-auto px-6 lg:px-20 text-center pt-[80px] md:pt-[0px]">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -68,8 +68,8 @@ const AboutPage = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="px-6 lg:px-20">
-        <div className="max-w-7xl mx-auto">
+      <section>
+        <div className="w-full max-w-[95rem] mx-auto px-6 lg:px-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <motion.div
@@ -88,8 +88,8 @@ const AboutPage = () => {
       </section>
 
       {/* History Section */}
-      <section className="py-24 px-6 lg:px-20 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-24 relative overflow-hidden">
+        <div className="w-full max-w-[95rem] mx-auto px-6 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeInUp}>
               <h2 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight">Our Story</h2>
@@ -172,8 +172,8 @@ const AboutPage = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 px-6 lg:px-20 bg-white/5">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-24 bg-white/5">
+        <div className="w-full max-w-[95rem] mx-auto px-6 lg:px-20">
           <motion.div
             {...fadeInUp}
             className="text-center mb-16"
